@@ -233,7 +233,7 @@ function WebVRManager( renderer ) {
 
 		} else {
 
-			standingMatrix.makeTranslation( 0, scope.userHeight, 0 );
+			standingMatrix.makeTranslation( 0, 0, 0 );
 
 		}
 
