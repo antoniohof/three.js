@@ -24788,10 +24788,10 @@ Sprite.prototype = Object.assign( Object.create( Object3D.prototype ), {
 			alignedPosition.subVectors( vertexPosition, center ).addScalar( 0.5 ).multiply( scale );
 
 			// to check if rotation is not zero
-			if ( sin !== undefined ) {
+			if ( sin !== undefined ) { // SUPERVIZ HACK fixed sprite rotation
 
-				rotatedPosition.x = ( cos * alignedPosition.x ) - ( sin * alignedPosition.y );
-				rotatedPosition.y = ( sin * alignedPosition.x ) + ( cos * alignedPosition.y );
+				// rotatedPosition.x = ( cos * alignedPosition.x ) - ( sin * alignedPosition.y );
+				// rotatedPosition.y = ( sin * alignedPosition.x ) + ( cos * alignedPosition.y );
 
 			} else {
 

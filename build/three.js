@@ -24794,10 +24794,10 @@
 				alignedPosition.subVectors( vertexPosition, center ).addScalar( 0.5 ).multiply( scale );
 
 				// to check if rotation is not zero
-				if ( sin !== undefined ) {
+				if ( sin !== undefined ) { // SUPERVIZ HACK
 
-					rotatedPosition.x = ( cos * alignedPosition.x ) - ( sin * alignedPosition.y );
-					rotatedPosition.y = ( sin * alignedPosition.x ) + ( cos * alignedPosition.y );
+					// rotatedPosition.x = ( cos * alignedPosition.x ) - ( sin * alignedPosition.y );
+					// rotatedPosition.y = ( sin * alignedPosition.x ) + ( cos * alignedPosition.y );
 
 				} else {
 
